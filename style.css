@@ -1,0 +1,258 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* //////// navigation container ///////// */
+
+.navigation {
+  display: flex;
+  /* min-height: 100vh; */
+}
+.menu {
+  flex: 1;
+  padding: 0 40px;
+}
+.head-img {
+  background-image: url("img/head-img.png");
+  background-size: cover;
+  flex: 3;
+}
+
+/* //////// menu container ////////////*/
+
+.toggle {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(77, 77, 77);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  border-radius: 5px;
+  margin: 50px 0;
+  transition: all 0.5s ease;
+}
+.menu-toggle:hover {
+  background-color: black;
+  opacity: 0.5;
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1)
+}
+
+.menu-toggle:hover .toggle {
+  background-color: white;
+}
+
+.description {
+  font-size: 1.2em;
+  color: rgb(53, 53, 53);
+}
+
+.description span:first-child {
+  font-weight: 100;
+}
+.description span:last-child {
+  font-weight: lighter;
+}
+
+/* //////// main content ////////////*/
+
+.main-content {
+  display: flex;
+  color: white;
+  /* min-height: 100%; */
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url("img/services.png");
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  flex: 1;
+}
+
+.services article,
+.section-1 article,
+.section-2 article,
+.feedback-sec1,
+.social-links,
+.designer-container {
+  margin: 0 40px;
+}
+
+.services span,
+.section-1 span,
+.section-2 span,
+.about-designer span,
+.feedback span {
+  font-weight: 100;
+}
+
+/* /////// main content aside section /////////////*/
+
+.section-container {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("img/best-starting.png");
+  background-size: 100% 100%;
+  /* background-size: cover; */
+  /* height: 50%; */
+  flex: 1;
+}
+
+.link-sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  color: rgb(70, 70, 70);
+  transition: all 0.5s ease;
+}
+
+.link-sec1:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.1)
+}
+
+/* /////// section-2 content ///////////*/
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("img/verified-dummy.png");
+  background-size: 100% 100%;
+  /* background-size: cover; */
+  /* height: 50%; */
+  flex: 1;
+}
+
+.link-sec2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.link-sec2:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.1)
+}
+
+/* ////////////// footer ////////////////*/
+
+.footer {
+  display: flex;
+  color: white;
+  min-height: 100vh;
+}
+
+.about-designer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-image: url("img/designer.png");
+  background-size: 100% 100%;
+/*   width: 30%;
+  height: 100vh; */
+}
+
+.feedback {
+  display: flex;
+  flex: 2.5;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("img/footer-img.png");
+  background-size: 100% 100%;
+/*   width: 70%;
+  height: 100vh; */
+}
+
+/* //////////// inputs ////////////// */
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+input,
+textarea {
+  background-color: black;
+  border-radius: 8px;
+  border-style: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.1)
+}
+
+input {
+  width: 45%;
+  height: 50px;
+  text-align: center;
+}
+
+textarea {
+  width: 75%;
+  height: 120px;
+  padding-top: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+.icon {
+  transition: all 0.1s ease;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}
